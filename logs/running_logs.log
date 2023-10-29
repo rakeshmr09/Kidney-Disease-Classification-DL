@@ -62,3 +62,109 @@ Traceback (most recent call last):
   File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
     raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
+[2023-10-26 08:48:09,910: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-26 08:48:10,078: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-26 08:48:10,108: INFO: common: created directory at: artifacts]
+[2023-10-26 08:48:10,135: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-26 08:52:27,643: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-26 08:52:27,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-26 08:52:27,654: INFO: common: created directory at: artifacts]
+[2023-10-26 08:52:27,657: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-26 08:57:47,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-26 08:57:47,093: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-26 08:57:47,096: INFO: common: created directory at: artifacts]
+[2023-10-26 08:57:47,098: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-26 08:57:52,018: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-27 09:25:47,979: INFO: utils: NumExpr defaulting to 4 threads. ]
+[2023-10-27 09:26:14,002: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<< ]
+[2023-10-27 09:26:14,161: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2023-10-27 09:26:14,191: INFO: common: yaml file: params.yaml loaded successfully ]
+[2023-10-27 09:26:14,191: INFO: common: created directory at path :artifacts ]
+[2023-10-27 09:26:14,199: INFO: common: created directory at path :artifacts/data_ingestion ]
+[2023-10-27 09:26:15,736: ERROR: main: HTTP Error 429: Too Many Requests ]
+Traceback (most recent call last):
+  File "E:\Kidney-Disease-Classification-DL\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "E:\Kidney-Disease-Classification-DL\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 557, in error
+    result = self._call_chain(*args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 749, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+[2023-10-29 08:40:14,982: INFO: utils: NumExpr defaulting to 4 threads. ]
+[2023-10-29 08:40:32,264: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<< ]
+[2023-10-29 08:40:32,319: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2023-10-29 08:40:32,325: INFO: common: yaml file: params.yaml loaded successfully ]
+[2023-10-29 08:40:32,327: INFO: common: created directory at path :artifacts ]
+[2023-10-29 08:40:32,386: INFO: common: created directory at path :artifacts/data_ingestion ]
+[2023-10-29 08:40:36,440: INFO: data_ingestion: artifacts/data_ingestion/data.zip download :
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sun, 29 Oct 2023 03:10:34 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=511=RU4wcRX6rjhJmxedzAsEu1ysA0WZ2T7_Xx-pgDCEZAp4SLw50lVgkDBKLFVyI7KkR4eYxgb4EbUBgWoM5sdYoaKZqioaEKWQBVNvy3vmT4vLkdbYvMIZR5zO3Ucc2T5jf4QpFXigct8KyJAdgGAP9XTUajJTjYrnaBwQPoytZrM; expires=Mon, 29-Apr-2024 03:10:33 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+ ]
+[2023-10-29 08:40:39,742: ERROR: main: File is not a zip file ]
+Traceback (most recent call last):
+  File "E:\Kidney-Disease-Classification-DL\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "E:\Kidney-Disease-Classification-DL\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "e:\chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 30, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
