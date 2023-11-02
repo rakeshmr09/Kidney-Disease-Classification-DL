@@ -168,3 +168,13 @@ Traceback (most recent call last):
   File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
     raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
+[2023-10-30 08:21:25,304: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-30 08:21:25,504: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-30 08:22:35,824: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-30 08:22:35,842: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-30 08:22:35,842: INFO: common: created directory at: artifacts]
+[2023-10-30 08:22:35,908: INFO: common: created directory at: artifacts\training]
+[2023-10-31 09:17:46,383: INFO: utils: NumExpr defaulting to 4 threads. ]
+[2023-11-01 18:33:41,837: INFO: utils: NumExpr defaulting to 4 threads. ]
+[2023-11-01 18:39:28,682: INFO: utils: NumExpr defaulting to 4 threads. ]
+[2023-11-01 18:40:58,227: INFO: utils: NumExpr defaulting to 4 threads. ]
